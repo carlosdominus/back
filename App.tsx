@@ -84,9 +84,12 @@ const App: React.FC = () => {
             </div>
 
             <div className="space-y-4">
-              <Button fullWidth className="text-lg shadow-green-900/20 shadow-xl py-4">
-                QUERO GARANTIR POR R$ 97
-                <ArrowRight size={20} />
+              <Button fullWidth className="text-lg shadow-green-900/20 shadow-xl py-4 animate-pulse-custom">
+                <div className="flex flex-col items-center leading-none">
+                  <span className="text-xs sm:text-sm font-medium opacity-90 mb-0.5">QUERO GARANTIR</span>
+                  <span className="text-2xl sm:text-3xl font-black tracking-tight">POR R$ 97</span>
+                </div>
+                <ArrowRight size={24} className="ml-2" />
               </Button>
               
               {/* Guarantee Seal */}
