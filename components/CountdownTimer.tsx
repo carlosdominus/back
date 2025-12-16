@@ -28,7 +28,7 @@ const CountdownTimer: React.FC = () => {
         <Timer size={16} />
         Tempo restante para garantir esse preço
       </div>
-      <div className="text-5xl font-black text-red-600 font-mono tracking-tighter" style={{ textShadow: '0 2px 4px rgba(239, 68, 68, 0.2)' }}>
+      <div className="text-4xl font-black text-red-600 font-mono tracking-tighter" style={{ textShadow: '0 2px 4px rgba(239, 68, 68, 0.2)' }}>
         {formatTime(minutes)}:{formatTime(seconds)}
       </div>
     </div>

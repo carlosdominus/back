@@ -74,7 +74,7 @@ const App: React.FC = () => {
                     R$ 97
                  </span>
               </div>
-              <p className="text-xs text-gray-500 mt-1 max-w-xs mx-auto">
+              <p className="text-[10px] text-gray-500 mt-1 max-w-xs mx-auto">
                 Exclusivo SOMENTE se você clicar no botão abaixo agora.
               </p>
             </div>
@@ -84,7 +84,7 @@ const App: React.FC = () => {
             </div>
 
             <div className="space-y-4">
-              <Button fullWidth className="text-base sm:text-lg shadow-green-900/20 shadow-xl py-4 animate-pulse-custom">
+              <Button fullWidth className="text-sm sm:text-base shadow-green-900/20 shadow-xl py-4 animate-pulse-custom">
                 QUERO GARANTIR POR R$ 97
                 <ArrowRight size={20} />
               </Button>
