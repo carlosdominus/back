@@ -11,6 +11,16 @@ export interface Testimonial {
   avatar: string;
 }
 
+export interface Winner {
+  id: string;
+  name: string;
+  location: string;
+  prize: string;
+  game: string;
+  date: string;
+  avatar: string;
+}
+
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: '1',
@@ -72,6 +82,54 @@ export const TESTIMONIALS: Testimonial[] = [
     stars: 5,
     tagColor: 'bg-yellow-100 text-yellow-800',
     avatar: 'https://i.pravatar.cc/64?img=55'
+  }
+];
+
+export const RECENT_WINNERS: Winner[] = [
+  {
+    id: 'w1',
+    name: 'Roberto Alves',
+    location: 'Campinas, SP',
+    prize: 'R$ 2.450,00',
+    game: '14 Pontos',
+    date: 'Ontem',
+    avatar: 'https://i.pravatar.cc/64?img=68'
+  },
+  {
+    id: 'w2',
+    name: 'Fernanda Lima',
+    location: 'Porto Alegre, RS',
+    prize: 'R$ 42.100,50',
+    game: 'Quina LotoFácil',
+    date: 'Há 2 dias',
+    avatar: 'https://i.pravatar.cc/64?img=44'
+  },
+  {
+    id: 'w3',
+    name: 'Carlos Mendes',
+    location: 'Belo Horizonte, MG',
+    prize: 'R$ 1.890,00',
+    game: '14 Pontos',
+    date: 'Há 4 horas',
+    avatar: 'https://i.pravatar.cc/64?img=11'
+  },
+  {
+    id: 'w4',
+    name: 'Patrícia Souza',
+    location: 'Salvador, BA',
+    prize: 'R$ 8.540,00',
+    game: 'Quadra + Terno',
+    date: 'Há 5 dias',
+    avatar: 'https://i.pravatar.cc/64?img=5'
+  },
+  {
+    id: 'w5',
+    name: 'André P.',
+    location: 'Curitiba, PR',
+    prize: 'R$ 145.300,00',
+    game: 'Prêmio Principal',
+    date: 'Semana passada',
+    avatar: 'https://i.pravatar.cc/64?img=53'
   }
 ];
 

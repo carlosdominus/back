@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ShieldCheck, AlertTriangle, ArrowRight, Lock, TrendingUp } from 'lucide-react';
 import CountdownTimer from './components/CountdownTimer';
 import TestimonialCard from './components/TestimonialCard';
+import WinnersSlider from './components/WinnersSlider';
 import Button from './components/Button';
 import { TESTIMONIALS, COLORS } from './constants';
 
@@ -105,6 +106,9 @@ const App: React.FC = () => {
             </div>
           </div>
         </div>
+
+        {/* Winners Section */}
+        <WinnersSlider />
 
         {/* Testimonials Section */}
         <section className="space-y-8">
