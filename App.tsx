@@ -17,6 +17,10 @@ const App: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleCheckout = () => {
+    window.location.href = 'https://go.perfectpay.com.br/PPU38CQ3LHH?utm_source=bkr';
+  };
+
   return (
     <div className="min-h-screen bg-[#fafafa] font-sans selection:bg-[#1a4d3f] selection:text-white pb-24">
       
@@ -85,7 +89,7 @@ const App: React.FC = () => {
             </div>
 
             <div className="space-y-4">
-              <Button fullWidth className="text-sm sm:text-base shadow-green-900/20 shadow-xl py-4 animate-pulse-custom">
+              <Button fullWidth className="text-sm sm:text-base shadow-green-900/20 shadow-xl py-4 animate-pulse-custom" onClick={handleCheckout}>
                 QUERO GARANTIR POR R$ 97
                 <ArrowRight size={20} />
               </Button>
@@ -139,7 +143,7 @@ const App: React.FC = () => {
           </div>
           
           <div className="pt-8">
-             <Button fullWidth variant="secondary" className="shadow-none border-gray-200">
+             <Button fullWidth variant="secondary" className="shadow-none border-gray-200" onClick={handleCheckout}>
                 Quero Garantir por R$97,00
              </Button>
           </div>
@@ -159,7 +163,7 @@ const App: React.FC = () => {
               <span className="text-lg font-bold text-[#1a4d3f]">R$ 97,00</span>
             </div>
           </div>
-          <Button className="w-full sm:w-auto flex-1 py-3 text-sm shadow-lg shadow-green-900/10">
+          <Button className="w-full sm:w-auto flex-1 py-3 text-sm shadow-lg shadow-green-900/10" onClick={handleCheckout}>
             Quero Garantir por R$97,00
           </Button>
         </div>
